@@ -10,9 +10,8 @@ React Router keeps your UI in sync with the URL. It has a simple API with powerf
 
 ### Docs & Help
 
-- [Tutorial – do this first!](https://github.com/reactjs/react-router-tutorial)
 - [Guides and API docs](/docs)
-- [Troubleshooting guide](https://github.com/reactjs/react-router/blob/master/docs/Troubleshooting.md)
+- [Troubleshooting guide](https://github.com/maman/react-router-legacy/blob/master/docs/Troubleshooting.md)
 - [Changelog](/CHANGES.md)
 
 ### Browser Support
@@ -23,24 +22,24 @@ We support all browsers and environments where React runs.
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install --save react-router
+    $ npm install --save react-router-two
 
 Then with a module bundler like [webpack](https://webpack.github.io/) that supports either CommonJS or ES2015 modules, use as you would anything else:
 
 ```js
 // using an ES6 transpiler, like babel
-import { Router, Route, Link } from 'react-router'
+import { Router, Route, Link } from 'react-router-two'
 
 // not using an ES6 transpiler
-var Router = require('react-router').Router
-var Route = require('react-router').Route
-var Link = require('react-router').Link
+var Router = require('react-router-two').Router
+var Route = require('react-router-two').Route
+var Link = require('react-router-two').Link
 ```
 
 The UMD build is also available on [unpkg](https://unpkg.com):
 
 ```html
-<script src="https://unpkg.com/react-router/umd/ReactRouter.min.js"></script>
+<script src="https://unpkg.com/react-router-two/umd/ReactRouter.min.js"></script>
 ```
 
 You can find the library on `window.ReactRouter`.
@@ -51,7 +50,7 @@ You can find the library on `window.ReactRouter`.
 import React from 'react'
 import createReactClass from 'create-react-class'
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, browserHistory } from 'react-router-two'
 
 const App = createReactClass({/*...*/})
 const About = createReactClass({/*...*/})
@@ -125,13 +124,11 @@ React Router.
 
 React Router was initially inspired by Ember's fantastic router. Many thanks to the Ember team.
 
-Also, thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to run our build in real browsers.
-
 [build-badge]: https://img.shields.io/travis/maman/react-router-legacy/master.svg?style=flat-square
 [build]: https://travis-ci.org/maman/react-router-legacy
 
-[npm-badge]: https://img.shields.io/npm/v/react-router.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-router
+[npm-badge]: https://img.shields.io/npm/v/react-router-two.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-router-two
 
 [codecov-badge]: https://img.shields.io/codecov/c/github/maman/react-router-legacy/master.svg?style=flat-square
 [codecov]: https://codecov.io/gh/maman/react-router-legacy
