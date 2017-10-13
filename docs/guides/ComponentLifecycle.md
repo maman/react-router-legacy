@@ -75,7 +75,7 @@ when changing routes, we can implement simple data fetching inside of
 `Invoice`.
 
 ```js
-let Invoice = React.createClass({
+let Invoice = createReactClass({
 
   getInitialState () {
     return {

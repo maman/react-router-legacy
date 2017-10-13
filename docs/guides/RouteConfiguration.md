@@ -7,7 +7,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link } from 'react-router'
 
-const App = React.createClass({
+const App = createReactClass({
   render() {
     return (
       <div>
@@ -22,13 +22,13 @@ const App = React.createClass({
   }
 })
 
-const About = React.createClass({
+const About = createReactClass({
   render() {
     return <h3>About</h3>
   }
 })
 
-const Inbox = React.createClass({
+const Inbox = createReactClass({
   render() {
     return (
       <div>
@@ -39,7 +39,7 @@ const Inbox = React.createClass({
   }
 })
 
-const Message = React.createClass({
+const Message = createReactClass({
   render() {
     return <h3>Message {this.props.params.id}</h3>
   }
@@ -73,7 +73,7 @@ Imagine we'd like to render another component inside of `App` when the URL is `/
 ```js
 import { IndexRoute } from 'react-router'
 
-const Dashboard = React.createClass({
+const Dashboard = createReactClass({
   render() {
     return <div>Welcome to the app!</div>
   }

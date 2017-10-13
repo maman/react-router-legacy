@@ -6,7 +6,7 @@ You need to wrap your component using `withRouter` to make the router object ava
 
 ```js
 const Component = withRouter(
-  React.createClass({
+  createReactClass({
     //...
   })
 )
@@ -20,7 +20,7 @@ const Component = withRouter(
   {/* ... other routes */}
 </Route>
 
-const App = React.createClass({
+const App = createReactClass({
   getInitialState() {
     return { showBackButton: false }
   },

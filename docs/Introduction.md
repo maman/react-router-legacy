@@ -10,11 +10,11 @@ To illustrate the problems React Router is going to solve for you, let's build a
 import React from 'react'
 import { render } from 'react-dom'
 
-const About = React.createClass({/*...*/})
-const Inbox = React.createClass({/*...*/})
-const Home = React.createClass({/*...*/})
+const About = createReactClass({/*...*/})
+const Inbox = createReactClass({/*...*/})
+const Home = createReactClass({/*...*/})
 
-const App = React.createClass({
+const App = createReactClass({
   getInitialState() {
     return {
       route: window.location.hash.substr(1)
@@ -110,7 +110,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 // Then we delete a bunch of code from App and
 // add some <Link> elements...
-const App = React.createClass({
+const App = createReactClass({
   render() {
     return (
       <div>
@@ -168,13 +168,13 @@ Alright, now we're ready to nest the inbox messages inside the inbox UI.
 
 ```js
 // Make a new component to render inside of Inbox
-const Message = React.createClass({
+const Message = createReactClass({
   render() {
     return <h3>Message</h3>
   }
 })
 
-const Inbox = React.createClass({
+const Inbox = createReactClass({
   render() {
     return (
       <div>
@@ -229,7 +229,7 @@ And visits to `/inbox` will build this:
 We're going to need to know something about the message in order to fetch it from the server. Route components get some useful properties injected into them when you render, particularly the parameters from the dynamic segment of your path. In our case, `:id`.
 
 ```js
-const Message = React.createClass({
+const Message = createReactClass({
 
   componentDidMount() {
     // from the path `/inbox/messages/:id`
