@@ -2,6 +2,7 @@ import createHashHistory from 'history/lib/createHashHistory'
 import useQueries from 'history/lib/useQueries'
 import invariant from 'invariant'
 import React from 'react'
+import createReactClass from 'create-react-class'
 
 import createTransitionManager from './createTransitionManager'
 import { routes } from './InternalPropTypes'
@@ -27,7 +28,7 @@ const { func, object } = React.PropTypes
  * a router that renders a <RouterContext> with all the props
  * it needs each time the URL changes.
  */
-const Router = React.createClass({
+const Router = createReactClass({
 
   propTypes: {
     history: object,

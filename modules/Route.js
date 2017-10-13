@@ -1,4 +1,5 @@
 import React from 'react'
+import createReactClass from 'create-react-class'
 import invariant from 'invariant'
 import { createRouteFromReactElement } from './RouteUtils'
 import { component, components } from './InternalPropTypes'
@@ -15,7 +16,7 @@ const { string, func } = React.PropTypes
  * that lead to it are considered "active" and their components are
  * rendered into the DOM, nested in the same order as in the tree.
  */
-const Route = React.createClass({ 
+const Route = createReactClass({ 
 
   statics: {
     createRouteFromReactElement
