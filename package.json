@@ -1,6 +1,6 @@
 {
   "name": "react-router-two-legacy",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "description": "A complete routing library for React - Legacy v2 code",
   "files": [
     "*.md",
