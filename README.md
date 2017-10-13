@@ -22,24 +22,24 @@ We support all browsers and environments where React runs.
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install --save react-router-two
+    $ npm install --save react-router-two-legacy
 
 Then with a module bundler like [webpack](https://webpack.github.io/) that supports either CommonJS or ES2015 modules, use as you would anything else:
 
 ```js
 // using an ES6 transpiler, like babel
-import { Router, Route, Link } from 'react-router-two'
+import { Router, Route, Link } from 'react-router-two-legacy'
 
 // not using an ES6 transpiler
-var Router = require('react-router-two').Router
-var Route = require('react-router-two').Route
-var Link = require('react-router-two').Link
+var Router = require('react-router-two-legacy').Router
+var Route = require('react-router-two-legacy').Route
+var Link = require('react-router-two-legacy').Link
 ```
 
 The UMD build is also available on [unpkg](https://unpkg.com):
 
 ```html
-<script src="https://unpkg.com/react-router-two/umd/ReactRouter.min.js"></script>
+<script src="https://unpkg.com/react-router-two-legacy/umd/ReactRouter.min.js"></script>
 ```
 
 You can find the library on `window.ReactRouter`.
@@ -50,7 +50,7 @@ You can find the library on `window.ReactRouter`.
 import React from 'react'
 import createReactClass from 'create-react-class'
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router-two'
+import { Router, Route, Link, browserHistory } from 'react-router-two-legacy'
 
 const App = createReactClass({/*...*/})
 const About = createReactClass({/*...*/})
@@ -127,7 +127,7 @@ React Router was initially inspired by Ember's fantastic router. Many thanks to 
 [build-badge]: https://img.shields.io/travis/maman/react-router-legacy/master.svg?style=flat-square
 [build]: https://travis-ci.org/maman/react-router-legacy
 
-[npm-badge]: https://img.shields.io/npm/v/react-router-two.svg?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/react-router-two-legacy.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/react-router-two
 
 [codecov-badge]: https://img.shields.io/codecov/c/github/maman/react-router-legacy/master.svg?style=flat-square
