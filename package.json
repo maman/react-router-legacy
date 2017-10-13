@@ -1,7 +1,7 @@
 {
-  "name": "react-router",
+  "name": "react-router-legacy",
   "version": "2.8.1",
-  "description": "A complete routing library for React",
+  "description": "A complete routing library for React - Legacy v2 code",
   "files": [
     "*.md",
     "docs",
@@ -12,8 +12,8 @@
   "main": "lib/index",
   "jsnext:main": "es6/index",
   "repository": "reactjs/react-router",
-  "homepage": "https://github.com/reactjs/react-router#readme",
-  "bugs": "https://github.com/reactjs/react-router/issues",
+  "homepage": "https://github.com/maman/react-router-legacy#readme",
+  "bugs": "https://github.com/maman/react-router-legacy/issues",
   "scripts": {
     "build": "npm run build-cjs && npm run build-es",
     "build-cjs": "rimraf lib && cross-env BABEL_ENV=cjs babel ./modules -d lib --ignore '__tests__'",
