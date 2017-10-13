@@ -1,3 +1,5 @@
+/* eslint react/prop-types: 0 */
+
 import invariant from 'invariant'
 import React from 'react'
 import createReactClass from 'create-react-class'
