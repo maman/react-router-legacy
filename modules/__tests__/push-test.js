@@ -38,6 +38,8 @@ describe('pushState', function () {
       const steps = [
         function () {
           expect(this.state.location.pathname).toEqual('/')
+        },
+        function () {
           history.push('/home/hi:there')
         },
         function () {

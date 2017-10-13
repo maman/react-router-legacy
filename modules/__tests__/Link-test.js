@@ -1,7 +1,7 @@
 import expect, { spyOn } from 'expect'
 import React, { Component } from 'react'
-import { Simulate } from 'react-addons-test-utils'
 import { render } from 'react-dom'
+import { Simulate } from 'react-dom/test-utils'
 import createHistory from '../createMemoryHistory'
 import execSteps from './execSteps'
 import Router from '../Router'
@@ -220,6 +220,8 @@ describe('A <Link>', function () {
         function () {
           a = node.querySelector('a')
           expect(a.className).toEqual('dontKillMe')
+        },
+        function () {
           history.push('/hello')
         },
         function () {
@@ -257,6 +259,8 @@ describe('A <Link>', function () {
         function () {
           a = node.querySelector('a')
           expect(a.style.color).toEqual('white')
+        },
+        function () {
           history.push('/hello')
         },
         function () {
@@ -296,6 +300,8 @@ describe('A <Link>', function () {
         function () {
           a = node.querySelector('a')
           expect(a.className).toEqual('')
+        },
+        function () {
           history.push('/hello')
         },
         function () {
@@ -354,6 +360,9 @@ describe('A <Link>', function () {
 
       const steps = [
         function () {
+          history.push('/')
+        },
+        function () {
           click(node.querySelector('a'), { button: 0 })
         },
         function () {
@@ -399,6 +408,9 @@ describe('A <Link>', function () {
       const spy = spyOn(history, 'push').andCallThrough()
 
       const steps = [
+        function () {
+          history.push('/')
+        },
         function () {
           click(node.querySelector('a'), { button: 0 })
         },

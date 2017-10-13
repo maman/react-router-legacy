@@ -7,10 +7,9 @@ function execSteps(steps, done) {
     } else {
       try {
         steps[index++].apply(this, arguments)
-
-        if (index === steps.length)
-          done()
+        if (index === steps.length) done()
       } catch (error) {
+        index = 0
         done(error)
       }
     }

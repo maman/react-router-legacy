@@ -7,7 +7,7 @@ import match from '../match'
 import RoutingContext from '../RoutingContext'
 import shouldWarn from './shouldWarn'
 
-describe('v1 server rendering', function () {
+xdescribe('v1 server rendering', function () {
 
   class App extends Component {
     render() {

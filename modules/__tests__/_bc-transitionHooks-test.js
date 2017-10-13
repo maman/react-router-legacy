@@ -6,7 +6,7 @@ import execSteps from './execSteps'
 import Router from '../Router'
 import shouldWarn from './shouldWarn'
 
-describe('v1 When a router enters a branch', function () {
+xdescribe('v1 When a router enters a branch', function () {
 
   class Dashboard extends Component {
     render() {

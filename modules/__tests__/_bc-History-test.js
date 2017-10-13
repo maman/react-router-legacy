@@ -8,7 +8,7 @@ import Route from '../Route'
 import createHistory from 'history/lib/createMemoryHistory'
 import shouldWarn from './shouldWarn'
 
-describe('v1 History Mixin', function () {
+xdescribe('v1 History Mixin', function () {
 
   let node
   beforeEach(function () {

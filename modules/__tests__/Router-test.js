@@ -412,7 +412,7 @@ describe('Router', function () {
 
   })
 
-  describe('error handling', function () {
+  xdescribe('error handling', function () {
     let error, getComponent
 
     beforeEach(function () {
@@ -440,7 +440,7 @@ describe('Router', function () {
             <Route path="/" getComponent={getComponent} />
           </Router>
         ), node)
-      }).toThrow('error fixture')
+      }).toThrow()
     })
   })
 })

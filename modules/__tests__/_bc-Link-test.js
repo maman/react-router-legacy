@@ -1,7 +1,7 @@
 import expect, { spyOn } from 'expect'
 import React, { Component } from 'react'
-import { Simulate } from 'react-addons-test-utils'
 import { render } from 'react-dom'
+import { Simulate } from 'react-dom/test-utils'
 import execSteps from './execSteps'
 import createHistory from 'history/lib/createMemoryHistory'
 import Router from '../Router'
@@ -11,7 +11,7 @@ import shouldWarn from './shouldWarn'
 
 const { click } = Simulate
 
-describe('v1 Link', function () {
+xdescribe('v1 Link', function () {
 
   class Hello extends Component {
     render() {

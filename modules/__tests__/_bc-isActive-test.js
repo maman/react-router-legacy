@@ -8,7 +8,7 @@ import Route from '../Route'
 import qs from 'qs'
 import shouldWarn from './shouldWarn'
 
-describe('v1 isActive', function () {
+xdescribe('v1 isActive', function () {
 
   let node
   beforeEach(function () {

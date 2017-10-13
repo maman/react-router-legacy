@@ -32,7 +32,7 @@ beforeEach(() => {
 afterEach(() => {
   /* eslint-disable no-console */
   const { threw, expected, warned } = console.error
-  console.error.restore()
+  // console.error.restore()
 
   if (!threw) {
     expected.forEach(about => {

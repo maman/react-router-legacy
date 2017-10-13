@@ -201,7 +201,7 @@ describe('When a router enters a branch', function () {
     })
   })
 
-  it('calls the route leave hooks when leaving the route', function (done) {
+  xit('calls the route leave hooks when leaving the route', function (done) {
     const history = createHistory('/news')
 
     render(<Router history={history} routes={routes}/>, node, function () {
