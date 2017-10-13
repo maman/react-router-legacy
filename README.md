@@ -1,4 +1,4 @@
-# React Router Legacy [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
+# React Router Legacy [![Travis][build-badge]][build] [![npm package][npm-badge]][npm] [![Codecov][codecov-badge]][codecov]
 
 *This is a maintained version of react-router v2*
 
@@ -7,9 +7,6 @@
 React Router is a complete routing library for [React](https://facebook.github.io/react).
 
 React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling built right in. Make the URL your first thought, not an after-thought.
-
-[![Codecov][codecov-badge]][codecov]
-[![Discord][discord-badge]][discord]
 
 ### Docs & Help
 
@@ -130,14 +127,11 @@ React Router was initially inspired by Ember's fantastic router. Many thanks to 
 
 Also, thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to run our build in real browsers.
 
-[build-badge]: https://img.shields.io/travis/reactjs/react-router/master.svg?style=flat-square
-[build]: https://travis-ci.org/reactjs/react-router
+[build-badge]: https://img.shields.io/travis/maman/react-router-legacy/master.svg?style=flat-square
+[build]: https://travis-ci.org/maman/react-router-legacy
 
 [npm-badge]: https://img.shields.io/npm/v/react-router.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/react-router
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/reactjs/react-router/master.svg?style=flat-square
-[codecov]: https://codecov.io/gh/reactjs/react-router
-
-[discord-badge]: https://img.shields.io/badge/Discord-join%20chat%20%E2%86%92-738bd7.svg?style=flat-square
-[discord]: https://discord.gg/0ZcbPKXt5bYaNQ46
+[codecov-badge]: https://img.shields.io/codecov/c/github/maman/react-router-legacy/master.svg?style=flat-square
+[codecov]: https://codecov.io/gh/maman/react-router-legacy
