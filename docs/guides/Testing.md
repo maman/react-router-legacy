@@ -5,7 +5,7 @@ Testing has become much easier since React Router version 1.x. For Testing prior
 It is recommended that you read the following two tutorials prior:
 - [Jest Getting Started docs](https://facebook.github.io/jest/docs/getting-started.html)
 - [Jest ReactJS docs](https://facebook.github.io/jest/docs/tutorial-react.html)
-- [ReactJS TestUtils docs](https://facebook.github.io/react/docs/test-utils.html)
+- [ReactJS TestUtils docs](https://reactjs.org/docs/test-utils.html)
 
 Testing with React-Router 1.x should just work. But if you are having issues see the following. Many users had issues when upgrading prior setups from react-router 0.x.
 
@@ -15,7 +15,6 @@ Firstly, ensure you are using at least the following versions of each package.
 - `"react": "^0.14.0"`
 - `"react-dom": "^0.14.0"`
 - `"react-router": "^1.0.0"`
-- `"react-addons-test-utils": "^0.14.0"`
 - `"jest": "^0.1.40"`
 - `"jest-cli": "^0.10.0"`
 - `"babel-jest": "^10.0.1"`
@@ -40,7 +39,7 @@ needs to be replaced with this:
 ```js
 import React from 'react'
 import { render } from 'react-dom'
-import TestUtils from 'react-addons-test-utils'
+import TestUtils from 'react-dom/test-utils'
 ```
 
 Make sure you do an npm clean, install, etc. and make sure you add react-addons-test-utils and react-dom to your unmocked paths.
@@ -49,8 +48,7 @@ Make sure you do an npm clean, install, etc. and make sure you add react-addons-
   ...
   "unmockedModulePathPatterns": [
     "./node_modules/react",
-    "./node_modules/react-dom",
-    "./node_modules/react-addons-test-utils",
+    "./node_modules/react-dom"
   ],
   ...
 
@@ -110,8 +108,8 @@ The test for that component:
 
 jest.unmock('../BasicPage')
 
-import TestUtils from 'react-addons-test-utils'
 import ReactDOM from 'react-dom'
+import TestUtils from 'react-dom/test-utils'
 import React from 'react'
 import BasicPage from '../BasicPage'
 
