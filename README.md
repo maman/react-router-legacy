@@ -1,4 +1,6 @@
-# React Router [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
+# React Router Legacy [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]
+
+*This is a maintained version of react-router v2*
 
 <img src="/logo/vertical@2x.png" height="150"/>
 
@@ -15,15 +17,6 @@ React Router keeps your UI in sync with the URL. It has a simple API with powerf
 - [Guides and API docs](/docs)
 - [Troubleshooting guide](https://github.com/reactjs/react-router/blob/master/docs/Troubleshooting.md)
 - [Changelog](/CHANGES.md)
-- [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router)
-- [CodePen boilerplate](http://codepen.io/anon/pen/xwQZdy?editors=001) for bug reports
-
-**Older Versions:**
-
-- 0.13.x - [docs](https://github.com/reactjs/react-router/tree/v0.13.6/doc) / [guides](https://github.com/reactjs/react-router/tree/v0.13.6/docs/guides) / [code](https://github.com/reactjs/react-router/tree/v0.13.6) / [upgrade guide](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v1.0.0.md)
-- 1.0.x - [docs](https://github.com/reactjs/react-router/tree/1.0.x/docs) / [code](https://github.com/reactjs/react-router/tree/1.0.x) / [upgrade guide](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md)
-
-For questions and support, please visit [our channel on Reactiflux](https://discord.gg/0ZcbPKXt5bYaNQ46) or [Stack Overflow](http://stackoverflow.com/questions/tagged/react-router).
 
 ### Browser Support
 
@@ -59,14 +52,15 @@ You can find the library on `window.ReactRouter`.
 
 ```js
 import React from 'react'
+import createReactClass from 'create-react-class'
 import { render } from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
 
-const App = React.createClass({/*...*/})
-const About = React.createClass({/*...*/})
-const NoMatch = React.createClass({/*...*/})
+const App = createReactClass({/*...*/})
+const About = createReactClass({/*...*/})
+const NoMatch = createReactClass({/*...*/})
 
-const Users = React.createClass({
+const Users = createReactClass({
   render() {
     return (
       <div>
@@ -87,7 +81,7 @@ const Users = React.createClass({
   }
 })
 
-const User = React.createClass({
+const User = createReactClass({
   componentDidMount() {
     this.setState({
       // route components are rendered with useful information, like URL params
